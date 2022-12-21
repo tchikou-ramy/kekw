@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  /* background: #96c8f7  */
+  /* background-image: url("https://hpierson.com/wp-content/uploads/2019/05/asset.jpg"); */
+  min-height: 100vh !important;
+  display: flex;
+  font-weight: 400;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,label,span {
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+body, html, .App, #root, .auth-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  padding-top: 80px;
+  padding-left: 200px;
+}
+     /* use in profile */
+.back:hover {
+  color: #c9243f;
+  cursor: pointer
+}
+.navbar-light {
+  background-color:  white;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+.navbar-brand{
+  text-align:center;
+}
+                 /* signin form */
+
+.auth-wrapper {
+  background: #96c8f7;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auth-inner {
+  width: 450px;
+  margin: auto;
+  /* margin-top:1px; */
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px 45px 55px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.new-user,
+.new-user a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.new-user a {
+  color: #167bff;
+}
+.error {
+  color:#db2269;
+  font-size: 0.625em;
+  display: relative;
+}
+.info {
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+            /* for image in header and name */
+  
+  .left_user_img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid rgba(0,0,0,.14);
+    box-sizing: content-box;
+  }
+
+  .left_user_info {
+    font-weight: 500;
+    color: #fff;
+    padding-left: 10px;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 0.3px;
+  }
+
+  .left_user_img1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid rgba(0,0,0,.14);
+    box-sizing: content-box;
+  }
+
+  .left_user_info span{
+    font-size: 11px;
+    font-weight: 400;
+    color: #ddd;
+  }
+
+  span {
+    margin-left: 16px;
+  }
+
+  /* added for sidebar responsive */
+  
+  body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    margin: 0;
+    margin-top: 62px;
+    padding: 0;
+    width: 225px;
+    background-color: #272a2c;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 20px;
+    padding-left: 40px;
+    text-decoration: none;
+    background-color: #272a2c;
+    color: #f5f5f5;
+    font-size: 18px;
+    border-radius: 10px;
+
+  }
+   
+  
+  .sidebar a:hover {
+    background-color: #555;
+    color: white;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .sidebar {
+      width: 100%;
+      margin-top: 55px;
+      height: auto;
+      position: relative;
+      padding-left: 35px;
+    }
+    .sidebar a {
+      float: left;
+      padding-left: 0px;
+    }
+    .container {
+      padding-top: 50px;
+      padding-left: 0;
+      
+  }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  } 
